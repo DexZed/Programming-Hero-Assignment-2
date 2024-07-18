@@ -1,6 +1,10 @@
 *{
     text-decoration: none;
 }
+body {
+    margin: 0;
+}
+
 .hero-section {
     background: black;
     display: flex;
@@ -47,6 +51,7 @@
     font-family: Inter, sans-serif;
     align-self: stretch;
     margin: auto 0;
+    color: white;
 }
 
 .nav-item-active {
@@ -54,9 +59,10 @@
     justify-content: center;
     border-radius: 46px;
     background-color: #e6533c;
-    align-self: stretch;
+    align-self: center;
     font-weight: 600;
     padding: 8px 20px;
+    color: white;
 }
 
 .hero-content {
@@ -71,6 +77,12 @@
     align-self: stretch;
     color: #fff;
     margin: auto 0;
+}
+
+.shape-style{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero-title {
@@ -99,6 +111,7 @@
     border-radius: 42px;
     padding: 16px 40px;
     text-decoration: none;
+    color: white;
 }
 
 .cta-primary {
@@ -110,11 +123,12 @@
 }
 
 .hero-image {
-    aspect-ratio: 0.93;
+    aspect-ratio: 0.6;
     object-fit: auto;
     object-position: center;
-    width: 100%;
-    flex-grow: 1;
+    width: 50%;
+    
+    /* flex-grow: 1; */
 }
 
 @media (max-width: 576px) {
@@ -137,6 +151,7 @@
         max-width: 100%;
         flex-wrap: wrap;
         white-space: initial;
+        
     }
 
     .nav-item-active {
