@@ -1,0 +1,244 @@
+
+
+
+*{
+    text-decoration: none;
+}
+body{
+   background-color: black;
+}
+.txt-color{
+    color: white;
+}
+.header-text{
+    color: #e6533c;
+    font: italic 800 36px Inter, sans-serif;
+}
+a {
+    color: aliceblue;
+}
+.r-disp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shape-style{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.items-active{
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: orange;
+}
+@media (max-width: 576px) {
+    .header {
+        display: flex;
+        padding-left: 20px;
+        justify-content: space-around;
+    }
+
+    .nav-items {
+        display: none;
+    }
+    .header-text{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 200px;
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ctn-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero-des {
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 1px solid white;
+        margin-top: 20px;
+        padding: 2px;
+    }
+
+    .btn {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 39px;
+
+    }
+
+    .ctn-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .box {
+        position: relative;
+        border: 1px solid white;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        left: 60%;
+        top: -200px;
+    }
+
+    .box-1 {
+        position: relative;
+        border: 1px solid white;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        right: 80%;
+        bottom: -200px;
+        
+    }
+
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .header {
+        display: flex;
+        padding-left: 20px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 39px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .header-text{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 200px;
+    }
+    .items-active{
+    font-family: Inter, sans-serif;
+    justify-content: center;
+    border-radius: 46px;
+    background-color: #e6533c;
+    align-self: center;
+    font-weight: 400;
+    padding: 5px 20px;
+    color: white;
+    }
+    .items{
+        font-family: Inter, sans-serif;
+    align-self: stretch;
+    margin: auto 0;
+    color: white;
+    }
+    #brr{
+        display: none;
+    }
+    .hero-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .ctn-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero-des {
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font: 900 78px / 94px Inter, sans-serif;
+}
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 1px solid white;
+        margin-top: 20px;
+        padding: 2px;
+    }
+
+    .btn {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 39px;
+
+    }
+
+    .ctn-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .box {
+        position: relative;
+        border: 1px solid white;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        left: 60%;
+        top: -200px;
+    }
+
+    .box-1 {
+        position: relative;
+        border: 1px solid white;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        right: 80%;
+        bottom: -200px;
+        
+    }
+
+}
