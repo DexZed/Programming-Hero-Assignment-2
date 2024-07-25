@@ -9,7 +9,9 @@ body {
 .txt-color {
     color: white;
 }
-
+.bdr{
+    border: 1px solid white;
+}
 .header-text {
     color: #e6533c;
     font: italic 800 36px Inter, sans-serif;
@@ -95,7 +97,7 @@ body {
     }
 
     .hero-des {
-        border: 1px solid white;
+       
         display: flex;
         justify-content: center;
         align-items: center;
@@ -111,42 +113,43 @@ body {
         justify-content: center;
         align-items: center;
         justify-content: space-evenly;
-        border: 1px solid white;
+       
         margin-top: 20px;
         padding: 2px;
     }
-
+    .btn-primary{
+        background-color: #e6533c;
+    }
     .btn {
-        padding: 20px;
-        border: 1px solid white;
-        border-radius: 39px;
-
+    font-family: Inter, sans-serif;
+    border-radius: 42px;
+    padding: 16px 40px;
+    text-decoration: none;
+    color: white;   
     }
 
     .ctn-right {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid white;
         width: 50%;
         margin-top: 20px;
     }
 
     .box {
+        
+        /* display: flex;
+        flex-direction: column;
         position: relative;
-        border: 1px solid white;
-        padding: 20px;
+        padding-left: 10px;
+        padding-right: 90px;
         display: flex;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
         left: 60%;
-        top: -200px;
+        top: -200px; */
     }
 
     .box-1 {
         position: relative;
-        border: 1px solid white;
         padding: 20px;
         display: flex;
         gap: 20px;
@@ -156,4 +159,4 @@ body {
         bottom: -200px;
 
     }
-
+    
