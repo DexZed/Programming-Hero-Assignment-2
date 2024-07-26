@@ -1,89 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            font-size: 67.5%;
-        }
-
-        div {
+        .container{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
             border: thin solid black;
+            justify-content: center;
+            
+            
         }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 20px 20px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "heading ntlger nav nav"
-                ". . . ."
-                ". . . .";
-                justify-content: space-around;
-        }
-
-        .heading {
-            grid-area: heading;
-            justify-self: center;
-            align-self: center;
-        }
-
-        .nav {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                ". . . ."
-                "l1 l2 l3 l4"
-                ". . . .";
-            grid-area: nav;
-        }
-
-        .l1 {
-            grid-area: l1;
-        }
-
-        .l2 {
-            grid-area: l2;
-        }
-
-        .l3 {
-            grid-area: l3;
-        }
-
-        .l4 {
-            grid-area: l4;
-        }
-
-        .ntlger {
-            grid-area: ntlger;
+        .items{
+            padding: 20px;
+             border: thin solid black;;
         }
     </style>
 </head>
-
 <body>
-    <section>
-        <div class="container">
-            <div class="heading">
-                <h1>Fitness</h1>
-            </div>
-            <div class="ntlger"></div>
-            <div class="nav">
-                <div class="l1"><a href="">home</a></div>
-                <div class="l2">about</div>
-                <div class="l3">contact</div>
-                <div class="l4">join</div>
-            </div>
-
-        </div>
-    </section>
+    <div class="container">
+        <div class="items d-1">Lorem.</div>
+        <div class="items d-2">Lorem.</div>
+        <div class="items d-3">Lorem.</div>
+        <div class="items d-4">Lorem.</div>
+        <div class="items d-5">Lorem.</div>
+        <div class="items d-6">Lorem.</div>
+        <div class="items d-7">Lorem.</div>
+        <div class="items d-8">Lorem.</div>
+        <div class="items d-9">Lorem.</div>
+        <div class="items d-10">Lorem.</div>
+        <div class="items d-11">Lorem.</div>
+        <div class="items d-12">Lorem.</div>
+    </div>
 </body>
-
 </html>
