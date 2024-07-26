@@ -7,16 +7,25 @@
     <style>
         .container{
             display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto;
+            grid-auto-columns: auto;
+            grid-auto-rows: auto;
             border: thin solid black;
             justify-content: center;
-            
+            grid-auto-flow: column;
+            overflow-wrap:normal;
             
         }
         .items{
             padding: 20px;
-             border: thin solid black;;
+             border: thin solid black;
+             
+        }
+        .d-1{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+           
+           
         }
     </style>
 </head>
