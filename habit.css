@@ -21,6 +21,8 @@ body{
     font-size: 48px;
     font-weight: 900;
     line-height: 1.2;
+    font-size: clamp(30px, 4vw, 40px);
+    max-width: 100%;
   }
   
   .habits-description {
@@ -31,15 +33,18 @@ body{
     letter-spacing: 0.3px;
     text-align: center;
     margin-top: 14px;
+    max-width: clamp(50%, 75%, 100%)
   }
   
   .habits-grid {
     display: flex;
     margin-top: 58px;
     align-items: center;
-    gap: 40px;
-    justify-content: start;
-    flex-wrap: wrap;
+    gap: 40px;    
+    max-width: 100%;
+    margin-top: clamp(20px, 5vw, 40px); /* Adjusts margin between 20px and 40px */
+    justify-content: space-between;
+    flex-direction: row; /* Default to row */
   }
   
   .habit-item {
@@ -97,40 +102,20 @@ body{
     text-align: center;
     margin-top: 6px;
   }
-  
-  @media (min-width: 991px) {
-    .habits-title {
-      max-width: 100%;
-      font-size: 40px;
+ 
+  /* Medium devices (576px to 992px) */
+    @media (min-width: 577px) and (max-width: 992px) {
+        .habits-grid {
+            flex-direction: row; /* Change to column on small devices */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+          }
     }
-  
-    .habits-description {
-      max-width: 100%;
-    }
-  
-    .habits-grid {
-      max-width: 100%;
-      margin-top: 40px;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .habits-title {
-        max-width: 100%;
-        font-size: 40px;
+      
+      /* Small devices (up to 576px) */
+      @media (max-width: 576px) {
+        .habits-grid {
+          flex-direction: column; /* Change to column on small devices */
+        }
       }
-    
-      .habits-description {
-        max-width: 100%;
-      }
-    
-      .habits-grid {
-        flex-direction: column;
-        max-width: 100%;
-        margin-top: 40px;
-       
-      }
-    }
-  
+      
