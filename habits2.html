@@ -1,0 +1,126 @@
+<style>
+    .fitness-cta {
+      border-radius: 18px;
+      background-color: #222;
+      display: flex;
+      max-width: 353px;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: Inter, sans-serif;
+      padding: 33px;
+    }
+    
+    .cta-content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    .cta-text {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    .cta-title {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 38px;
+    }
+    
+    .cta-description {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      margin-top: 14px;
+    }
+    
+    .cta-button {
+      border-radius: 42px;
+      background-color: #e6533c;
+      margin-top: 24px;
+      width: 100%;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+      line-height: 1;
+      padding: 16px 40px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .cta-image {
+      
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 31px;
+    
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    @media (min-width: 577px) and (max-width: 992px) {
+      .fitness-cta{
+        max-width: 100%;
+        flex-direction: row;
+      }
+      .cta-description{
+        max-width: 75%;
+      }
+      .cta-button{
+        max-width: 65%;
+      }
+      .cta-image{
+        
+        max-width: 100%;
+      }
+    }
+    @media (min-width: 993px) {
+      .fitness-cta{
+        max-width: 100%;
+        flex-direction: row;
+      }
+      .cta-description{
+        max-width: 75%;
+      }
+      .cta-button{
+        max-width: 50%;
+      }
+      .cta-image{
+      max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <section class="fitness-cta">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2 class="cta-title">Run an Extra <br /> Mile Easily</h2>
+          <p class="cta-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+        </div>
+        <form>
+          <label for="joinNowButton" class="visually-hidden">Join Now</label>
+          <button id="joinNowButton" class="cta-button">Join Now</button>
+        </form>
+      </div>
+      <div class="img-ctn">
+        <img loading="lazy" src="./images/run.jpg" class="cta-image" alt="Fitness motivation image" />
+      </div>
+      
+    </section>
