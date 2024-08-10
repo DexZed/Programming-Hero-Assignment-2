@@ -1,3 +1,120 @@
 body {
     background-color: black;
 }
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.content-wrapper {
+    border-radius: 18px;
+    background-color: rgba(34, 34, 34, 1);
+    overflow: hidden;
+    padding: 30px 43px;
+    max-width: 100%;
+}
+
+
+.inner-wrapper {
+    gap: 20px;
+    display: flex;
+}
+
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    width: clamp(50%,25%,100%);
+    margin-left: 0;
+}
+
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-family: Inter, sans-serif;
+    justify-content: start;
+    margin: auto 0;
+    max-width: 100%;
+}
+
+
+.text-headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 100%;
+}
+
+
+.main-heading {
+    color: rgba(255, 255, 255, 1);
+    font-size: clamp(40px,44px,48px);
+    font-weight: 900;
+    line-height: clamp(54px,56px,58px);
+    max-width: 100%;
+}
+
+
+.subtext {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-top: 14px;
+    max-width: 100%;
+}
+
+
+.cta-button {
+    border-radius: 42px;
+    background-color: rgba(230, 83, 60, 1);
+    margin-top: 34px;
+    width: 224px;
+    max-width: 100%;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    line-height: 1;
+    padding: 16px 40px;
+    cursor: pointer;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 20px;
+   
+    width: 100%;
+}
+
+
+.image {
+    aspect-ratio: 1.17;
+    background: url(./images/run.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: 75% 10%;
+    width: 100%;
+    border-radius: 18px;
+    flex-grow: 1;
+    margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+    .text-content {
+        margin-top: 40px;
+    }
+    .inner-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    .content-wrapper {
+        padding: 0 20px;
+    }
+}

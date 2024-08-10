@@ -1,165 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./join.css">
     <title>Fitness Section</title>
-    <style>
-        .section-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-        }
 
-        .content-wrapper {
-            border-radius: 18px;
-            background-color: rgba(34, 34, 34, 1);
-            width: 100%;
-            overflow: hidden;
-            padding: 30px 43px;
-        }
-
-        @media (max-width: 991px) {
-            .content-wrapper {
-                max-width: 100%;
-                padding: 0 20px;
-            }
-        }
-
-        .inner-wrapper {
-            gap: 20px;
-            display: flex;
-        }
-
-        @media (max-width: 991px) {
-            .inner-wrapper {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 0;
-            }
-        }
-
-        .text-column {
-            display: flex;
-            flex-direction: column;
-            width: 55%;
-            margin-left: 0;
-        }
-
-        @media (max-width: 991px) {
-            .text-column {
-                width: 100%;
-            }
-        }
-
-        .text-content {
-            display: flex;
-            flex-direction: column;
-            align-self: stretch;
-            font-family: Inter, sans-serif;
-            justify-content: start;
-            margin: auto 0;
-        }
-
-        @media (max-width: 991px) {
-            .text-content {
-                max-width: 100%;
-                margin-top: 40px;
-            }
-        }
-
-        .text-headers {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-        }
-
-        @media (max-width: 991px) {
-            .text-headers {
-                max-width: 100%;
-            }
-        }
-
-        .main-heading {
-            color: rgba(255, 255, 255, 1);
-            font-size: 48px;
-            font-weight: 900;
-            line-height: 58px;
-        }
-
-        @media (max-width: 991px) {
-            .main-heading {
-                max-width: 100%;
-                font-size: 40px;
-                line-height: 54px;
-            }
-        }
-
-        .subtext {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.3px;
-            margin-top: 14px;
-        }
-
-        @media (max-width: 991px) {
-            .subtext {
-                max-width: 100%;
-            }
-        }
-
-        .cta-button {
-            border-radius: 42px;
-            background-color: rgba(230, 83, 60, 1);
-            margin-top: 34px;
-            width: 224px;
-            max-width: 100%;
-            font-size: 18px;
-            color: rgba(255, 255, 255, 1);
-            font-weight: 600;
-            line-height: 1;
-            padding: 16px 40px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 991px) {
-            .cta-button {
-                padding: 0 20px;
-            }
-        }
-
-        .image-column {
-            display: flex;
-            flex-direction: column;
-            width: 45%;
-            margin-left: 20px;
-        }
-
-        @media (max-width: 991px) {
-            .image-column {
-                width: 100%;
-            }
-        }
-
-        .image {
-            aspect-ratio: 1.17;
-            object-fit: contain;
-            object-position: center;
-            width: 100%;
-            border-radius: 18px;
-            flex-grow: 1;
-        }
-
-        @media (max-width: 991px) {
-            .image {
-                margin-top: 40px;
-            }
-        }
-
-    </style>
 </head>
+
 <body>
     <section class="section-container">
         <div class="content-wrapper">
@@ -168,16 +17,20 @@
                     <div class="text-content">
                         <header class="text-headers">
                             <h1 class="main-heading">Run an Extra <br /> Mile Easily</h1>
-                            <p class="subtext">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                            <p class="subtext">We believe fitness should be accessible to everyone, everywhere,
+                                regardless of income or access to a gym. With hundreds of professional workouts.</p>
                         </header>
                         <button class="cta-button">Join Now</button>
                     </div>
                 </article>
                 <aside class="image-column">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6213a1617351ecd35c8a5525aa8b3e323dce6489721ec0f13268174dbbd1dc27?apiKey=02bd20b952664b3eaa12a63d2c74c96c&&apiKey=02bd20b952664b3eaa12a63d2c74c96c" class="image" alt="Person running on a track." />
+                    <div class="image">
+                        
+                    </div>
                 </aside>
             </div>
         </div>
     </section>
 </body>
+
 </html>
