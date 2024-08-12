@@ -64,6 +64,27 @@ body{
 .cols-2{
     grid-column: span 2 / auto;
 }
-  @media screen and (max-width: 576px) {
+  @media (max-width: 576px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+.img-1{
+    grid-column: span 1 / auto;
+}
+.img-2{
+    grid-column: span 1 / auto;
+}
+.img-3{
+    display: none;
+}
+
+.img-4{
+    grid-column: span 1;
+}
+.img-6{
+    display: none;
+}
 
   }
