@@ -1,6 +1,25 @@
 body{
     background-color: black;
 }
+
+.train-head{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 120%;
+color: #FFFFFF;
+}
+.train-des{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.3px;
+color: rgba(255, 255, 255, 0.5);
+
+}
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
