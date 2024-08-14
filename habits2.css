@@ -75,7 +75,7 @@
   }
   @media (max-width: 576px){
     .fitness-cta{
-      translate: 50px;
+      /* translate: 50px; */
     }
     .cta-content{
       translate: -20px;
