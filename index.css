@@ -1,30 +1,40 @@
-body{
+@font-face {
+    font-family: miama;
+    src: url(./fonts/Miama.ttf);
+}
+
+body {
     background-color: black;
 }
-.head-main{
+
+.head-main {
     display: flex;
     justify-content: space-around;
 }
-.head-title{
-font-family: 'Inter';
-font-style: italic;
-font-weight: 800;
-font-size: 36px;
-line-height: 120%;
-color: #E6533C;
+
+.head-title {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 120%;
+    color: #E6533C;
 }
-.lnks{
+
+.lnks {
     text-decoration: none;
     color: aliceblue;
     font-size: large;
     font-weight: lighter;
 }
-.topnav{
+
+.topnav {
     display: flex;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 }
-.itms{
+
+.itms {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,8 +42,105 @@ color: #E6533C;
     gap: 15px;
     border-radius: 20px;
 }
-.active{
-padding: 8px 20px;
-background: #E6533C;
-border-radius: 46px;
+
+.active {
+    padding: 8px 20px;
+    background: #E6533C;
+    border-radius: 46px;
+}
+
+.ctn-left-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.stylish {
+    font-family: 'miama';
+    font-size: 78px;
+    font-weight: 100;
+}
+
+.ctn-des {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-1 {
+    padding: 16px 40px;
+    gap: 10px;
+    background: #E6533C;
+    border-radius: 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.btn-2 {
+    padding: 16px 40px;
+    gap: 10px;
+    background-color: black;
+    border-radius: 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: thin solid white;
+}
+.pain-1{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: clamp(30px,50%,40px);
+line-height: 40px;
+letter-spacing: 1px;
+color: #FFFFFF;
+}
+.pain-2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: medium;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.box-1, .box-2{
+width: 200px;
+height: 98px;
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 12px;
+display: flex;
+justify-content:center ;
+align-items: center;
+padding-right: 30px;
+}
+.ctn-right{
+    aspect-ratio: 9/7;
+    background: url(./images/Images\ 2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.ctn-main{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-row: 500px;
+}
+.ctn-left{
 }
