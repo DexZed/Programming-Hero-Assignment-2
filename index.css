@@ -85,8 +85,11 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    border: thin solid black;
 }
-
+.btn-container{
+    gap: 10px;
+}
 .btn-2 {
     padding: 16px 40px;
     gap: 10px;
@@ -149,6 +152,9 @@ padding-right: 30px;
     position: relative;
 
 }
+.hamburg{
+    width: 25%;
+}
 .ctn-main{
 display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -172,5 +178,17 @@ gap: 50px 50px;
     .btn-container{
         display: flex;
         justify-content: center;
+    }
+    .itms{
+        display: none;
+    }
+    .ctn-left-title,.ctn-des{
+        padding-left: 20px;
+    }
+    
+}
+@media (min-width: 577px){
+    .hamburg{
+        display: none;
     }
 }
