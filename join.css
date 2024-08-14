@@ -1,6 +1,4 @@
-body{
-    background-color: black;
-}
+
 .change-habits {
     display: flex;
     flex-direction: column;
