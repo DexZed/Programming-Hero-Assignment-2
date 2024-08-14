@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+.head-main{
+    display: flex;
+    justify-content: space-around;
+}
+.head-title{
+font-family: 'Inter';
+font-style: italic;
+font-weight: 800;
+font-size: 36px;
+line-height: 120%;
+color: #E6533C;
+}
+.lnks{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+    font-weight: lighter;
+}
+.topnav{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.itms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(0, 1%, 20%);
+    gap: 15px;
+    border-radius: 20px;
+}
+.active{
+padding: 8px 20px;
+background: #E6533C;
+border-radius: 46px;
+}
