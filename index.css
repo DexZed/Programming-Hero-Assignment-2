@@ -196,4 +196,7 @@ gap: 50px 50px;
     .hamburg{
         display: none;
     }
+    .ctn-main{
+        margin-left: 100px;
+    }
 }
