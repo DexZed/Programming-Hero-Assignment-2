@@ -12,6 +12,8 @@ margin: 0;
     display: flex;
     gap: 30px;
     padding: 20px;
+    translate: 200px;
+    width: 75%
 }
 .bmi-head{
     display: flex;
@@ -21,9 +23,9 @@ margin: 0;
 
 }
 .bmi table {
-    border: 2px solid #5c5c60;
-    height: 100%;
-    width: 100%;
+    
+    
+
     table-layout: fixed;
     border-collapse: collapse;
     border-spacing: 1px;
@@ -129,5 +131,10 @@ text-decoration: none;
 @media (max-width:576px) {
     .bmi{
         flex-direction: column;
+    }
+}
+@media (min-width:993px) {
+    .bmi table{
+        width: 75%;
     }
 }

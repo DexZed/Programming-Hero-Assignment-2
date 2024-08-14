@@ -95,10 +95,11 @@ body{
     margin-top: 6px;
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: 576px) {
     .main-title {
       max-width: 100%;
       font-size: 40px;
+      text-align: center;
     }
   
     .subtitle {
@@ -110,4 +111,5 @@ body{
       max-width: 100%;
       margin-top: 40px;
     }
+    
   }
