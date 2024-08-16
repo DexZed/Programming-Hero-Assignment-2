@@ -1,0 +1,54 @@
+.sld-ctn{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+body{
+  background-color: black;
+}
+.unq-head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.unq-title{
+  font-size: 48px;
+  color: aliceblue;
+}
+.unq-des{
+  font-size: larger;
+  padding: 20px;
+  color: rgb(89, 91, 90);
+}
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 300px; 
+    height: 200px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgb(146, 75, 23); 
+    
+  }
+  
+  #slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+  }
+
+  .sld-img{
+    width: 300px; 
+    height: 200px; 
+  }
+
+  @media (max-width:576px)
+  {
+    .sld-ctn{
+        flex-direction: column;
+        gap: 0;
+    }
+  }
